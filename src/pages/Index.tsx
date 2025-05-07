@@ -21,8 +21,8 @@ const Index = () => {
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
                 <span className="inline-flex items-baseline relative">
                   <span className="relative inline-block">
-                    <span className="absolute -inset-1 rounded-full border-2 border-primary animate-pulse opacity-70"></span>
-                    <span>1</span>
+                    <span className="absolute -inset-1.5 border-2 border-t-0 border-l-2 border-r-2 border-b-2 rounded-full border-primary animate-circle-highlight opacity-70"></span>
+                    <span className="text-red-500">1</span>
                   </span>
                   <span className="mx-2">in</span>
                   <TypeWriter 

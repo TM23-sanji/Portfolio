@@ -89,9 +89,9 @@ export default {
 					'50%': { opacity: '0' }
 				},
 				circleHighlight: {
-					'0%': { transform: 'scale(0.95)', opacity: '0.5' },
-					'50%': { transform: 'scale(1.05)', opacity: '0.8' },
-					'100%': { transform: 'scale(0.95)', opacity: '0.5' }
+					'0%': { transform: 'scale(0.95)', opacity: '0.5', borderSpacing: '0px' },
+					'50%': { transform: 'scale(1.05)', opacity: '0.8', borderSpacing: '3px' },
+					'100%': { transform: 'scale(0.95)', opacity: '0.5', borderSpacing: '0px' }
 				}
 			},
 			animation: {
