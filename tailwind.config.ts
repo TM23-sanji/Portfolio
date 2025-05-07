@@ -83,6 +83,10 @@ export default {
 				scaleUp: {
 					from: { opacity: '0', transform: 'scale(0.95)' },
 					to: { opacity: '1', transform: 'scale(1)' }
+				},
+				blink: {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
 				}
 			},
 			animation: {
@@ -91,7 +95,8 @@ export default {
 				'fade-in': 'fadeIn 0.6s ease-out forwards',
 				'slide-left': 'slideInLeft 0.6s ease-out forwards',
 				'slide-right': 'slideInRight 0.6s ease-out forwards',
-				'scale-up': 'scaleUp 0.4s ease-out forwards'
+				'scale-up': 'scaleUp 0.4s ease-out forwards',
+				'pulse': 'blink 1s ease-in-out infinite'
 			}
 		}
 	},

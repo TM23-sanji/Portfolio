@@ -19,7 +19,14 @@ const Index = () => {
           <div className="container max-w-6xl mx-auto px-4 sm:px-6">
             <AnimatedSection className="flex flex-col items-center text-center">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                1 in <TypeWriter text="10,00,000" className="text-primary" />
+                <span className="inline-flex items-baseline">
+                  1 in <TypeWriter 
+                    text="10,00,000" 
+                    className="text-primary ml-2 bg-primary/5 px-3 py-1 rounded-md"
+                    speed={120} 
+                    cursorStyle="blinking"
+                  />
+                </span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mb-10">
                 I design and build digital experiences that are minimal, intuitive, and performant.
