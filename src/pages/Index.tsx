@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code, BookOpen, Image } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import TypeWriter from '../components/TypeWriter';
 import { Button } from '@/components/ui/button';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -18,8 +19,7 @@ const Index = () => {
           <div className="container max-w-6xl mx-auto px-4 sm:px-6">
             <AnimatedSection className="flex flex-col items-center text-center">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                Creative Developer<br />
-                <span className="text-primary">& Designer</span>
+                1 in <TypeWriter text="10,00,000" className="text-primary" />
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mb-10">
                 I design and build digital experiences that are minimal, intuitive, and performant.
