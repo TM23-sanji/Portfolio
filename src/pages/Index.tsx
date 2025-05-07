@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, BookOpen, Image } from 'lucide-react';
+import { ArrowRight, Code, BookOpen, Image, CheckCircle } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import TypeWriter from '../components/TypeWriter';
 import { Button } from '@/components/ui/button';
@@ -19,13 +19,22 @@ const Index = () => {
           <div className="container max-w-6xl mx-auto px-4 sm:px-6">
             <AnimatedSection className="flex flex-col items-center text-center">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                <span className="inline-flex items-baseline">
-                  1 in <TypeWriter 
+                <span className="inline-flex items-baseline relative">
+                  <span className="relative inline-block">
+                    <span className="absolute -inset-1 rounded-full border-2 border-primary animate-pulse opacity-70"></span>
+                    <span>1</span>
+                  </span>
+                  <span className="mx-2">in</span>
+                  <TypeWriter 
                     text="10,00,000" 
                     className="text-primary ml-2 bg-primary/5 px-3 py-1 rounded-md"
                     speed={120} 
                     cursorStyle="blinking"
                   />
+                </span>
+                <span className="block mt-2 text-sm md:text-base text-primary flex items-center justify-center">
+                  <CheckCircle size={18} className="mr-1 inline-block" />
+                  <span>It's True</span>
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mb-10">

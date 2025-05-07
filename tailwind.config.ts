@@ -87,6 +87,11 @@ export default {
 				blink: {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0' }
+				},
+				circleHighlight: {
+					'0%': { transform: 'scale(0.95)', opacity: '0.5' },
+					'50%': { transform: 'scale(1.05)', opacity: '0.8' },
+					'100%': { transform: 'scale(0.95)', opacity: '0.5' }
 				}
 			},
 			animation: {
@@ -96,7 +101,8 @@ export default {
 				'slide-left': 'slideInLeft 0.6s ease-out forwards',
 				'slide-right': 'slideInRight 0.6s ease-out forwards',
 				'scale-up': 'scaleUp 0.4s ease-out forwards',
-				'pulse': 'blink 1s ease-in-out infinite'
+				'pulse': 'blink 1s ease-in-out infinite',
+				'circle-highlight': 'circleHighlight 2s ease-in-out infinite'
 			}
 		}
 	},
