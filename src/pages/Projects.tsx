@@ -25,7 +25,7 @@ const projects: Project[] = [
     id: 1,
     title: "Image Gallery",
     description: "An interactive & responsive image gallery built with Next.js, ImageKit, and Clerk, featuring smooth animations, Advance user authentication, image likes (hearts), and comment functionality..",
-    image: "public/image.png",
+    image: "/image.png",
     icon: Layout,
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Image-kit", "Clerk"],
     link: "#",
@@ -36,7 +36,7 @@ const projects: Project[] = [
     id: 2,
     title: "Uber clone",
     description: "A real-time ride-hailing web app where users can book rides and track drivers, featuring separate rider and driver panels with GPS-based tracking and fare estimates.",
-    image: "public/Untitled design.png",
+    image: "/Untitled design.png",
     icon: FileText,
     tags: ["React", "WebSocktes", "Leaflet.js", "Tailwind CSS", "OpenStreetMap API"],
     link: "#",
@@ -47,7 +47,7 @@ const projects: Project[] = [
     id: 4,
     title: "Real-time Chat",
     description: "A multi-user chat application powered by WebSockets, WebContainers, and Gemini AI for smart message handling. Enables seamless real-time communication and collaboration within a single project environment.",
-    image: "public/realtime-chat.png",
+    image: "/realtime-chat.png",
     icon: Image,
     tags: ["React", "WebContainers", "WebSockets", "TypeScript", "WebSockets"],
     link: "#",
@@ -93,7 +93,7 @@ const Projects = () => {
                     delay={index * 100}
                   >
                     <div className={`h-56 ${project.image} flex items-center justify-center`}>
-                      <img src={project.image} alt={project.title} className="w-full h-full p-3 object-cover" />
+                      <img src={project.image} alt={project.title} className="w-full h-full  object-cover" />
                     </div>
                     <div className="flex flex-col flex-grow p-6">
                       <h3 className="font-bold text-xl mb-3">{project.title}</h3>
@@ -149,7 +149,7 @@ const Projects = () => {
                   >
                     <div className={`h-36 ${project.image} flex items-center justify-center`}>
                       {/* <project.icon size={32} className="text-primary/70" /> */}
-                      <img src={project.image} alt={project.title} className="w-full h-full p-3 object-cover" />
+                      <img src={project.image} alt={project.title} className="w-full h-full pl-2 pr-2 object-cover" />
 
                     </div>
                     <div className="p-6">

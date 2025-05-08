@@ -70,7 +70,7 @@ const Index = () => {
                 delay={100}
               >
                 <div className="h-48 bg-muted flex items-center justify-center">
-                  <img src="public/image.png" alt="" />
+                  <img src="/image.png" alt="Gallery" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="font-semibold text-lg mb-2">
@@ -97,7 +97,7 @@ const Index = () => {
               >
                 <div className="h-48 bg-muted flex items-center justify-center">
                   {/* <Image size={32} className="text-muted-foreground" /> */}
-                  <img src="public/realtime-chat.png" alt="" />
+                  <img src="/realtime-chat.png" alt="Chat" className="w-full h-full pl-1 pr-1 object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="font-semibold text-lg mb-2">
@@ -124,7 +124,7 @@ const Index = () => {
               >
                 <div className="h-48 bg-muted flex items-center justify-center">
                   {/* <BookOpen size={32} className="text-muted-foreground" /> */}
-                  <img src="public/Untitled design.png" alt="" />
+                  <img src="/Untitled design.png" alt="Uber" />
                 </div>
                 <div className="p-6">
                   <h3 className="font-semibold text-lg mb-2">Uber clone</h3>
