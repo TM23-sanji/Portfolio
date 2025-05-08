@@ -6,13 +6,14 @@ import { Button } from '@/components/ui/button';
 import AnimatedSection from '../components/AnimatedSection';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Index from './Index';
 
 const NotFound = () => {
   return (
     <>
       <Navbar />
       
-      <main className="min-h-screen flex items-center justify-center py-32">
+      {/* <main className="min-h-screen flex items-center justify-center py-32">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6">
           <AnimatedSection className="max-w-lg mx-auto text-center">
             <h1 className="text-8xl font-bold text-primary mb-4">404</h1>
@@ -28,9 +29,10 @@ const NotFound = () => {
             </Button>
           </AnimatedSection>
         </div>
-      </main>
+      </main> */}
+      <Index />
       
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
