@@ -23,72 +23,72 @@ interface TimelineEntry {
 const timelineData: TimelineEntry[] = [
   {
     id: 1,
-    year: '2022 - Present',
-    title: 'Senior Frontend Developer',
-    description: 'Lead frontend development for enterprise applications. Focus on React, TypeScript, and performance optimization.',
-    organization: 'Tech Solutions Inc.',
-    skills: ['React', 'TypeScript', 'NextJS', 'Performance Optimization'],
+    year: '2023 - Joint Entrance Examination',
+    title: 'Ranked in Top 1%',
+    description: "The JEE is one of India's most competitive exams, conducted for admission to undergraduate engineering programs at prestigious institutions like IITs, NITs, and other technical institutes. With around 10 lakh students appearing annually, it is among the largest exams globally.",
+    organization: 'Exam',
+    skills: ['Physics', 'Mathematics', 'Chemistry'],
     icon: Code,
     type: 'experience'
   },
   {
     id: 2,
-    year: '2020 - 2022',
-    title: 'UI/UX Designer & Developer',
-    description: 'Created user interfaces and implemented frontend solutions for various clients. Focused on design systems and component libraries.',
-    organization: 'Design Studio',
-    skills: ['UI/UX Design', 'Figma', 'React', 'Styled Components'],
+    year: '2023 - 2025',
+    title: 'Pursuing B.Tech in Computer Science',
+    description: 'A self-driven third-year undergraduate student, passionate about learning beyond the traditional classroom setting.',
+    organization: 'Education',
+    skills: ['Communication', 'Confident', 'Fast-Learner'],
     icon: Pencil,
     type: 'experience'
   },
   {
     id: 3,
-    year: '2019 - 2020',
-    title: 'Frontend Developer',
-    description: 'Developed responsive web applications and interfaces using modern JavaScript frameworks.',
-    organization: 'Web Innovations',
-    skills: ['JavaScript', 'React', 'CSS', 'Responsive Design'],
+    year: '2023 - 2025',
+    title: 'Get Your Hands Dirty',
+    description: 'I believe in learning through observation, practice, and self-correction. I start by watching experts to grasp key techniques, then apply them on my own. When mistakes happen, I use them to learn and improve, allowing me to grow quickly and effectively.',
+    organization: 'Learning Approach',
+    skills: ['JavaScript', 'React', 'Next.js', 'Python', 'Scikit-learn'],
     icon: Code,
     type: 'experience'
   },
-  {
-    id: 4,
-    year: '2019',
-    title: 'Master of Computer Science',
-    description: 'Specialized in Human-Computer Interaction and Web Technologies.',
-    organization: 'University of Technology',
-    icon: BookOpen,
-    type: 'education'
-  },
-  {
-    id: 5,
-    year: '2018',
-    title: 'Advanced Frontend Certification',
-    description: 'Comprehensive certification covering modern frontend development practices.',
-    organization: 'Web Academy',
-    skills: ['JavaScript', 'Advanced CSS', 'Performance'],
-    icon: Star,
-    type: 'certification'
-  },
-  {
-    id: 6,
-    year: '2017',
-    title: 'Junior Developer',
-    description: 'Started career as a junior web developer working on various projects.',
-    organization: 'Digital Agency',
-    skills: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
-    icon: Briefcase,
-    type: 'experience'
-  },
-  {
-    id: 7,
-    year: '2017',
-    title: 'Bachelor of Design',
-    description: 'Focus on digital design and interactive media.',
-    organization: 'Design Institute',
-    icon: BookOpen,
-    type: 'education'
-  },
+  // {
+  //   id: 4,
+  //   year: '2019',
+  //   title: 'Master of Computer Science',
+  //   description: 'Specialized in Human-Computer Interaction and Web Technologies.',
+  //   organization: 'University of Technology',
+  //   icon: BookOpen,
+  //   type: 'education'
+  // },
+  // {
+  //   id: 5,
+  //   year: '2018',
+  //   title: 'Advanced Frontend Certification',
+  //   description: 'Comprehensive certification covering modern frontend development practices.',
+  //   organization: 'Web Academy',
+  //   skills: ['JavaScript', 'Advanced CSS', 'Performance'],
+  //   icon: Star,
+  //   type: 'certification'
+  // },
+  // {
+  //   id: 6,
+  //   year: '2017',
+  //   title: 'Junior Developer',
+  //   description: 'Started career as a junior web developer working on various projects.',
+  //   organization: 'Digital Agency',
+  //   skills: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
+  //   icon: Briefcase,
+  //   type: 'experience'
+  // },
+  // {
+  //   id: 7,
+  //   year: '2017',
+  //   title: 'Bachelor of Design',
+  //   description: 'Focus on digital design and interactive media.',
+  //   organization: 'Design Institute',
+  //   icon: BookOpen,
+  //   type: 'education'
+  // },
 ];
 
 // Skill category type
@@ -106,19 +106,38 @@ const skillsData: SkillCategory[] = [
     name: 'Frontend Development',
     skills: [
       { name: 'React', level: 90 },
-      { name: 'TypeScript', level: 85 },
       { name: 'NextJS', level: 80 },
-      { name: 'HTML5 / CSS3', level: 95 },
+      { name: 'TypeScript', level: 85 },
+      { name: 'Python', level: 80},
+      { name: 'HTML / CSS', level: 95 },
       { name: 'JavaScript', level: 90 },
+      {name: 'Tailwind CSS', level: 90},
+      {name: 'ImageKit', level: 70},
       { name: 'Responsive Design', level: 90 },
+    ],
+  },
+  {
+    name: 'Backend Development',
+    skills: [
+      { name: 'Express Js / Node Js', level: 90 },
+      {name: 'REST APIs', level: 85},
+      { name: 'MongoDB', level: 95 },
+      { name: 'WebSockets', level: 80 },
+      { name: 'Neon (PostgreSQL)', level: 65 },
+      { name: 'Drizzle', level: 70 },
+      {name: 'Redis' , level: 70},
+      {name: 'Clerk-Auth', level: 80},
+      {name: 'Zod', level:70},
+      {name: 'Postman', level: 90}
     ],
   },
   {
     name: 'UI/UX Design',
     skills: [
       { name: 'Figma', level: 85 },
-      { name: 'UI Design', level: 85 },
-      { name: 'UX Research', level: 75 },
+      {name: 'GSAP', level:75},
+      {name: 'Shadcn UI / RemixIcon / Material UI', level:90},
+      { name: 'UI Design / UX Research', level: 85 },
       { name: 'Wireframing', level: 90 },
       { name: 'Prototyping', level: 85 },
     ],
@@ -126,11 +145,26 @@ const skillsData: SkillCategory[] = [
   {
     name: 'Development Tools',
     skills: [
-      { name: 'Git', level: 90 },
-      { name: 'Webpack', level: 75 },
-      { name: 'Jest', level: 80 },
+      { name: 'Git / GitHub', level: 90 },
+      { name: 'ESLint / Prettier', level: 75 },
       { name: 'Docker', level: 65 },
-      { name: 'CI/CD', level: 70 },
+    ],
+  },
+  {
+    name: 'Future Targets',
+    skills: [
+      { name: 'Kubernetes', level:0 },
+      { name: 'Flutter / Dart', level: 0 },
+      {name: 'Three.js', level:0},
+      { name: 'Tensor Flow / OpenCV', level: 0 },
+    ],
+  },
+  {
+    name: 'Other Skills',
+    skills: [
+      { name: 'Matplotlib', level:75 },
+      { name: 'Numpy / Pandas', level: 80 },
+      { name: 'Scikit-learn', level: 60 },
     ],
   },
 ];
@@ -255,7 +289,7 @@ const Skills = () => {
                 I'm always open to discussing new projects and opportunities.
               </p>
               <Button asChild size="lg" className="hover-lift">
-                <a href="mailto:hello@example.com" className="flex items-center">
+                <a href="mailto:tusharmishra802@gmail.com" className="flex items-center">
                   Contact Me
                   <ArrowRight size={16} className="ml-2" />
                 </a>

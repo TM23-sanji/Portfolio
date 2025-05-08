@@ -49,7 +49,7 @@ const Footer = () => {
             </h3>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/TM23-sanji" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -58,7 +58,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/%C6%AD%E2%B2%99-cs-a96208354/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -67,7 +67,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:hello@example.com" 
+                href="mailto:tusharmishra802@gmail.com" 
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Email"
               >

@@ -23,67 +23,35 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Minimalist Dashboard",
-    description: "A clean and intuitive dashboard interface with data visualization. Built with React, Tailwind CSS, and Recharts.",
-    image: "bg-gradient-to-br from-blue-50 to-indigo-100",
+    title: "Image Gallery",
+    description: "An interactive & responsive image gallery built with Next.js, ImageKit, and Clerk, featuring smooth animations, Advance user authentication, image likes (hearts), and comment functionality..",
+    image: "public/image.png",
     icon: Layout,
-    tags: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Image-kit", "Clerk"],
     link: "#",
-    github: "https://github.com",
+    github: "https://github.com/TM23-sanji/Share-It",
     featured: true
   },
   {
     id: 2,
-    title: "Portfolio Gallery",
-    description: "An elegant image gallery with smooth transitions and animations, designed for showcasing creative work.",
-    image: "bg-gradient-to-br from-emerald-50 to-teal-100",
-    icon: Image,
-    tags: ["React", "Framer Motion", "CSS Grid"],
-    link: "#",
-    github: "https://github.com",
-    featured: true
-  },
-  {
-    id: 3,
-    title: "Blog Platform",
-    description: "A minimalist blog platform focused on content and readability. Features a clean design and markdown support.",
-    image: "bg-gradient-to-br from-amber-50 to-yellow-100",
+    title: "Uber clone",
+    description: "A real-time ride-hailing web app where users can book rides and track drivers, featuring separate rider and driver panels with GPS-based tracking and fare estimates.",
+    image: "public/Untitled design.png",
     icon: FileText,
-    tags: ["Next.js", "Markdown", "Tailwind CSS"],
+    tags: ["React", "WebSocktes", "Leaflet.js", "Tailwind CSS", "OpenStreetMap API"],
     link: "#",
-    github: "https://github.com",
+    github: "https://github.com/TM23-sanji/uber-clone",
     featured: true
   },
   {
     id: 4,
-    title: "Weather Application",
-    description: "A clean weather application that displays current conditions and forecasts with smooth animations.",
-    image: "bg-gradient-to-br from-sky-50 to-blue-100",
-    icon: Code,
-    tags: ["React", "Weather API", "CSS Animations"],
+    title: "Real-time Chat",
+    description: "A multi-user chat application powered by WebSockets, WebContainers, and Gemini AI for smart message handling. Enables seamless real-time communication and collaboration within a single project environment.",
+    image: "public/realtime-chat.png",
+    icon: Image,
+    tags: ["React", "WebContainers", "WebSockets", "TypeScript", "WebSockets"],
     link: "#",
-    github: "https://github.com",
-    featured: false
-  },
-  {
-    id: 5,
-    title: "E-commerce UI Kit",
-    description: "A comprehensive collection of reusable UI components for e-commerce applications.",
-    image: "bg-gradient-to-br from-rose-50 to-pink-100",
-    icon: Layout,
-    tags: ["React", "Styled Components", "Storybook"],
-    link: "#",
-    github: "https://github.com",
-    featured: false
-  },
-  {
-    id: 6,
-    title: "Task Management App",
-    description: "A minimalist task management application with drag-and-drop functionality and subtle animations.",
-    image: "bg-gradient-to-br from-violet-50 to-purple-100",
-    icon: Code,
-    tags: ["React", "Redux", "React DnD"],
-    link: "#",
+    github: "https://github.com/TM23-sanji/real-time-chat",
     featured: false
   },
 ];
@@ -125,7 +93,7 @@ const Projects = () => {
                     delay={index * 100}
                   >
                     <div className={`h-56 ${project.image} flex items-center justify-center`}>
-                      <project.icon size={48} className="text-primary/70" />
+                      <img src={project.image} alt={project.title} className="w-full h-full p-3 object-cover" />
                     </div>
                     <div className="flex flex-col flex-grow p-6">
                       <h3 className="font-bold text-xl mb-3">{project.title}</h3>
@@ -138,12 +106,12 @@ const Projects = () => {
                         ))}
                       </div>
                       <div className="flex gap-4">
-                        <Button asChild>
+                        {/* <Button asChild>
                           <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
                             <span>View Project</span>
                             <ExternalLink size={16} className="ml-2" />
                           </a>
-                        </Button>
+                        </Button> */}
                         {project.github && (
                           <Button asChild variant="outline">
                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
@@ -180,7 +148,9 @@ const Projects = () => {
                     delay={index * 100}
                   >
                     <div className={`h-36 ${project.image} flex items-center justify-center`}>
-                      <project.icon size={32} className="text-primary/70" />
+                      {/* <project.icon size={32} className="text-primary/70" /> */}
+                      <img src={project.image} alt={project.title} className="w-full h-full p-3 object-cover" />
+
                     </div>
                     <div className="p-6">
                       <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
@@ -227,7 +197,7 @@ const Projects = () => {
                 Let's discuss your project and see how I can help bring your ideas to life.
               </p>
               <Button asChild size="lg" className="hover-lift">
-                <a href="mailto:hello@example.com">
+                <a href="mailto:tusharmishra802@gmail.com">
                   Get In Touch
                 </a>
               </Button>
