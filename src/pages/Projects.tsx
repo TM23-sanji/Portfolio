@@ -28,7 +28,7 @@ const projects: Project[] = [
     image: `${import.meta.env.BASE_URL}image.png`,
     icon: Layout,
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Image-kit", "Clerk"],
-    link: "#",
+    link: "https://wall-tribe.vercel.app/",
     github: "https://github.com/TM23-sanji/Share-It",
     featured: true
   },
@@ -106,12 +106,12 @@ const Projects = () => {
                         ))}
                       </div>
                       <div className="flex gap-4">
-                        {/* <Button asChild>
+                        <Button asChild>
                           <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center">
                             <span>View Project</span>
                             <ExternalLink size={16} className="ml-2" />
                           </a>
-                        </Button> */}
+                        </Button>
                         {project.github && (
                           <Button asChild variant="outline">
                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
